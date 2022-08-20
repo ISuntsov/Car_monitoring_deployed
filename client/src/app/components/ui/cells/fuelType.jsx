@@ -5,8 +5,8 @@ import { getFuelTypeById, getFuelTypesLoadingStatus } from '../../../store/slice
 
 const FuelType = ({ id }) => {
     const isLoading = useSelector(getFuelTypesLoadingStatus());
-    if (isLoading) return 'Loading...';
     const fuelType = useSelector(getFuelTypeById(id));
+    if (isLoading) return 'Loading...';
     return <>{fuelType.name}</>;
 };
 FuelType.propTypes = {
