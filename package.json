@@ -24,6 +24,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.6"
   },
+  "engines": {
+    "node": "16.14.1"
+  },
   "devDependencies": {
     "concurrently": "^7.3.0",
     "cross-env": "^7.0.3",
